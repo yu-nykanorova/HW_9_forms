@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <label class="field">
+            <div class="field__title">Name</div>
+            <input type="text" class="field__input" placeholder="Enter your name">
+        </label>
+        <label class="field">
+            <div class="field__title">Sex</div>
+            <select class="field__input">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </label>
+        <label class="field">
+            <div class="field__title">Message</div>
+            <textarea class="field__input field__textarea"></textarea>
+        </label>
+
+        <label class="radio">
+            <input name="name" class="radio__input" type="radio">
+            <div class="radio__box">
+                <div class="radio__circle"></div>
+            </div>
+            <div class="radio__text">Lorem ipsum dolor sit amet.</div>
+        </label>
+        <label class="radio">
+            <input name="name" class="radio__input" type="radio">
+            <div class="radio__box">
+                <div class="radio__circle"></div>
+            </div>
+            <div class="radio__text">Lorem ipsum dolor sit amet.</div>
+        </label>
+        <div class="switch_container">
+            <label class="switch">
+                <input class="switch__input" type="checkbox">
+                <div class="switch__box">
+                    <div class="switch__circle"></div>
+                </div>
+            </label>
+            <div class="switch__text">Turn it (OFF/ON)</div>
+        </div>
+        <div class="check_container">
+            <label class="check">
+                <input class="check__input" type="checkbox">
+                <div class="check__box"></div>
+                <div class="check__text">First</div>
+            </label>
+            <label class="check">
+                <input class="check__input" type="checkbox">
+                <div class="check__box"></div>
+                <div class="check__text">Second</div>
+            </label>
+        </div>
+        <button type="submit">SEND</button>
+    </form>
+</body>
+</html>
