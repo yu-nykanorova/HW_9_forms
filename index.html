@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form>
+        <h1 class="form__title">Fill this form, please</h1>
         <label class="field">
             <div class="field__title">Name</div>
             <input type="text" class="field__input" placeholder="Enter your name">
@@ -38,15 +42,15 @@
             </div>
             <div class="radio__text">Lorem ipsum dolor sit amet.</div>
         </label>
-        <div class="switch_container">
+        
             <label class="switch">
                 <input class="switch__input" type="checkbox">
                 <div class="switch__box">
                     <div class="switch__circle"></div>
                 </div>
+                <div class="switch__text">Turn it (OFF/ON)</div>
             </label>
-            <div class="switch__text">Turn it (OFF/ON)</div>
-        </div>
+            
         <div class="check_container">
             <label class="check">
                 <input class="check__input" type="checkbox">
@@ -59,7 +63,7 @@
                 <div class="check__text">Second</div>
             </label>
         </div>
-        <button type="submit">SEND</button>
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>

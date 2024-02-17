@@ -2,12 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
 }
 
 form {
     max-width: 400px;
-    padding: 50px;
+    padding: 30px 50px;
+    margin-inline: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fdece8;
+    box-shadow: 0px 0px 10px 0px #a58780;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 30px;
+    color: #3b4256;
+    margin-bottom: 20px;
 }
 
 .field {
@@ -28,7 +41,7 @@ form {
     width: 100%;
     outline: 0;
     padding: 12px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 144%;
@@ -55,6 +68,10 @@ form {
     gap: 10px;
     margin-bottom: 20px;
 }
+
+.radio, .switch, .check, button {
+    cursor: pointer;
+} 
 
 .radio__input, .switch__input, .check__input {
     display: none;
@@ -83,14 +100,14 @@ form {
     transition: .2s all ease-in-out;
 }
 
-.radio__text {
+.radio__text, .switch__text, .check__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
     color: #3b4256;
 }
 
-.switch_container {
+.switch {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -102,7 +119,9 @@ form {
     height: 31px;
     background: #e2e7ed;
     border-radius: 23px;
+    box-shadow: 0px 0px 1px 0px #3b4256;
     position: relative;
+    transition: all .2s ease-in-out;
 }
 
 .switch__circle {
@@ -115,7 +134,7 @@ form {
     top: 2px;
     left: 3px;
     transform: translateX(0);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .switch__input:checked ~ .switch__box {
@@ -123,7 +142,7 @@ form {
 }
 
 .switch__input:checked ~ .switch__box .switch__circle {
-    transform: translateX(18px);
+    transform: translateX(calc(50% + 4px));
 }
 
 .check_container {
@@ -172,7 +191,12 @@ form {
 }
 
 button {
-    padding: 3px 5px;
+    padding: 3px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #52575c;
+    align-self: center;
+    box-shadow: 0px 0px 2px 0px #3b4256;
 }
 
 
